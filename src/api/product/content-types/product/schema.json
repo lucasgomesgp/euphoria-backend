@@ -1,0 +1,98 @@
+{
+  "kind": "collectionType",
+  "collectionName": "products",
+  "info": {
+    "singularName": "product",
+    "pluralName": "products",
+    "displayName": "products",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "price": {
+      "type": "decimal",
+      "required": true
+    },
+    "sizes": {
+      "type": "json",
+      "required": true
+    },
+    "colors": {
+      "type": "json",
+      "required": true
+    },
+    "fabric": {
+      "type": "string",
+      "required": true
+    },
+    "pattern": {
+      "type": "string",
+      "required": true
+    },
+    "fit": {
+      "type": "string",
+      "required": true
+    },
+    "neck": {
+      "type": "string",
+      "required": true
+    },
+    "sleeve": {
+      "type": "string",
+      "required": true
+    },
+    "style": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "video": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "videos"
+      ]
+    },
+    "subTitle": {
+      "type": "string",
+      "required": true
+    },
+    "category": {
+      "type": "customField",
+      "options": [
+        "women",
+        "men",
+        "joggers"
+      ],
+      "required": true,
+      "customField": "plugin::multi-select.multi-select"
+    },
+    "slides": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    }
+  }
+}
